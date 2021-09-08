@@ -11,8 +11,8 @@ const sequelize = require("./config/connection");
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(cors());
-// app.use(cors({    origin:["https://rg-247fbk.herokuapp.com"]}));
+// app.use(cors());
+app.use(cors({    origin:["https://rg-247fbk.herokuapp.com"]}));
 // app.use(tokenAuth);
 // app.use(express.static('public'));
 
